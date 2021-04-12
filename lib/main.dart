@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bottom/detailpages.dart';
-import 'package:flutter_bottom/photohero.dart';
-import 'package:flutter_bottom/secodmain.dart';
 import 'package:get/get.dart';
 
 import 'heroanimation.dart';
@@ -34,7 +32,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key? key, required this.title}) : super(key: key);
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -119,7 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 class MyStatefulWidget extends StatefulWidget {
-  const MyStatefulWidget({Key key}) : super(key: key);
+  const MyStatefulWidget({Key? key}) : super(key: key);
   @override
   _MyStatefulWidgetState createState() => _MyStatefulWidgetState();
 }
